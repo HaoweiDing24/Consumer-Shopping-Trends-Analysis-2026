@@ -8,6 +8,7 @@ This project analyzes consumer shopping behavior, including age, income, online/
 ## 2. Dataset
 - File: Consumer_Shopping_Trends_2026.csv
 - Contains customer age, income, spending habits, preferences, etc.
+- kaggle
 
 ## 3. Files in this Repository
 - shopping_analysis.ipynb (main analysis code)
