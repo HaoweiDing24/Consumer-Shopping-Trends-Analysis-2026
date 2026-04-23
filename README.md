@@ -1,44 +1,40 @@
-#Consumer Shopping Trends Analysis
-A Python-based data analysis project focused on exploring consumer shopping behaviors, uncovering correlations between demographics, spending patterns, and channel preferences to support retail business decisions.
+# Consumer Shopping Trends Analysis 2026
 
-#Problem Statement
-This project aims to address core retail business questions:
-1.Explore the relationship between age distribution and consumer shopping behaviors
-2.Compare preferences and spending differences between online/offline shopping channels
-3.Analyze correlations among key metrics: monthly income, discount sensitivity, impulse buying, and brand loyalty
-4.Identify actionable insights for retail operations and marketing strategies
+## 1. Problem & User
+This project analyzes consumer shopping behavior patterns to identify key trends in spending habits, channel preferences, and demographic correlations. Insights can help retailers optimize product and marketing strategies.
 
-#Core Questions
-•Do consumers prefer online or offline shopping? What are the spending power differences between channels?
-•Do age and income significantly impact consumption habits and decision-making?
-•Are there group differences in behaviors like discount sensitivity and impulse buying?
+## 2. Data
+- **Source**: Kaggle `dsfscfds/consumer-shopping-trend-analysis-2026`
+- **Key Fields**:
+  - Demographics: `age`, `monthly_income`, `city_tier`
+  - Spending: `avg_online_spend`, `avg_store_spend`
+  - Preferences: `shopping_preference`, `discount_sensitivity`, `impulse_buying_score`
 
-#Data Description
-•Dataset: Consumer_Shopping_Trends_2026.csv from Kaggle
+## 3. Methods
+1.  Load and clean data (check missing/duplicate values, filter age range)
+2.  Create derived features (`total_spend`, `age_group`)
+3.  Generate visualizations: histograms, pie charts, boxplots, correlation heatmap, scatter plots
+4.  Interpret results for business insights
 
-#Methods & Workflow
-This project adopts a standard data analysis pipeline implemented in Python:
-#1. Dependencies
-•pandas: Data loading, cleaning, and preprocessing
-•matplotlib / seaborn: Data visualization
-•jupyter notebook: Interactive code execution
-#2. Analysis Steps
-1.Data Loading & Exploration: Inspect data structure and basic statistics
-2.Data Cleaning: Deduplication, outlier handling, and missing value validation
-3.Univariate Analysis: Age distribution and shopping channel proportion statistics
-4.Multivariate Comparison: Age group vs. consumer behavior; online vs. offline spending
-5.Correlation Analysis: Heatmaps and scatter plots to identify variable relationships
-6.Visualization: Histograms, pie charts, box plots, and scatter plots for insight presentation
+## 4. Key Findings
+- 86.9% of consumers prefer in-store shopping, with only 10% preferring online-only.
+- Age distribution is evenly spread across 18–80 years old.
+- No strong correlation between monthly income and online spending.
+- Discount sensitivity and impulse buying scores are consistent across all age groups.
+- Online and offline spending show nearly identical distributions.
 
+## 5. How to Run
+1.  Ensure Python 3.8+ with `pandas`, `matplotlib`, `seaborn` installed.
+2.  Place `Consumer_Shopping_Trends_2026.csv` in the same folder as `acc102.ipynb`.
+3.  Open the notebook in Jupyter/VS Code and run all cells.
 
-#Key Findings
-1.Channel Preference: Offline shopping dominates with 86.9% of preferences; offline spending median is slightly higher than online
-2.Age Characteristics: User age follows a normal distribution, concentrated between 30-70 years, ensuring strong sample representativeness
-3.Behavioral Commonality: Discount sensitivity and impulse buying scores show no significant differences across age groups—these are universal consumer traits
-4.Weak Correlations: Monthly income has a weak positive correlation with online spending; discount sensitivity shows nearly no linear correlation with other consumption metrics
-5.Spending Patterns: High-income and middle-to-older age groups tend to have higher online spending, though overall correlation remains weak
+## 6. Product link / Demo
+- GitHub Repository: *[Paste your repo link here]*
+- Notebook: `acc102.ipynb` (included in this repo)
 
+## 7. Limitations & Next Steps
+- **Limitations**: No detailed geographic data; weak correlations suggest synthetic data patterns.
+- **Next Steps**: Add regression analysis; build an interactive Streamlit dashboard.
 
-#How to run
-Ensure Python 3.7+ is installed, then install dependencies:
-pip install pandas matplotlib seaborn
+---
+*ACC102 Mini Assignment*
