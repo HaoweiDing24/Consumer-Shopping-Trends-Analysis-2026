@@ -17,22 +17,19 @@ This project analyzes consumer shopping behavior patterns to identify key trends
 4.  Interpret results for business insights
 
 ## 4. Key Findings
-- 86.9% of consumers prefer in-store shopping, with only 10% preferring online-only.
-- Age distribution is evenly spread across 18–80 years old.
-- No strong correlation between monthly income and online spending.
+- No single dominant customer segment exists; a full-age demographic coverage is therefore required.
+- Nearly 90% of consumers prefer in-store shopping, proving that offline experience, immediacy and trust are irreplaceable strengths. Shifting entirely to e-commerce would risk losing most target users.
 - Discount sensitivity and impulse buying scores are consistent across all age groups.
-- Online and offline spending show nearly identical distributions.
+- No significant linear relationships exist among the variables. Monthly income shows no correlation with online spending, and has negligible impact on discount sensitivity, impulse buying, and brand loyalty. All consumption behaviors are mutually independent.
+- Online and offline spending distributions show no significant difference, with consumers' spending power balanced across both channels.
 
 ## 5. How to Run
 1.  Ensure Python 3.8+ with `pandas`, `matplotlib`, `seaborn` installed.
 2.  Place `Consumer_Shopping_Trends_2026.csv` in the same folder as `acc102.ipynb`.
 3.  Open the notebook in Jupyter/VS Code and run all cells.
 
-## 6. Product link / Demo
-- GitHub Repository: *[Paste your repo link here]*
-- Notebook: `acc102.ipynb` (included in this repo)
 
-## 7. Limitations & Next Steps
+## 6. Limitations & Next Steps
 - **Limitations**: No detailed geographic data; weak correlations suggest synthetic data patterns.
 - **Next Steps**: Add regression analysis; build an interactive Streamlit dashboard.
 
